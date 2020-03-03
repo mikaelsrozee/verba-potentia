@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "verbapotentia",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Verba Potentia",
+  "description": "The power of words. Cast chants through the chat menu to shape the world around you.",
   "authors": [
     "Me!"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://msr.codes/",
+    "sources": "https://github.com/mikaelsrozee/verba-potentia"
   },
 
-  "license": "CC0-1.0",
+  "license": "LGPL-2.1",
   "icon": "assets/modid/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "codes.msr.verbapotentia.VerbaPotentia"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "verbapotentia.mixins.json"
   ],
 
   "depends": {

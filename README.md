@@ -1,16 +1,8 @@
-# Fabric Example Mod
+# Verba Potentia
+Verba Potentia - "the power of words" - is a Minecraft mod for the Fabric mod loader. 
 
-## Setup
-
-1. Edit build.gradle and mod.json to suit your needs.
-    * The "mixins" object can be removed from mod.json if you do not need to use mixins.
-    * Please replace all occurences of "modid" with your own mod ID - sometimes, a different string may also suffice.
-2. Run the following command:
-
-```
-./gradlew idea
-```
+The mod focuses on a gameplay experience akin to the base game, with minimal GUI's, keeping you in the world. 
 
 ## License
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+This mod is available under the [LGPL-2.1 license](https://tldrlegal.com/license/gnu-lesser-general-public-license-v2.1-(lgpl-2.1).
