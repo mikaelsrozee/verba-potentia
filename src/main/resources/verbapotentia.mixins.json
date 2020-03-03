@@ -4,9 +4,10 @@
   "package": "codes.msr.verbapotentia.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "ServerMessageMixin"
   ],
   "client": [
-    "ExampleMixin"
+
   ],
   "injectors": {
     "defaultRequire": 1

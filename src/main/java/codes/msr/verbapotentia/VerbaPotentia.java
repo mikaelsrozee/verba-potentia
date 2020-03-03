@@ -1,14 +1,23 @@
 package codes.msr.verbapotentia;
 
+import codes.msr.verbapotentia.server.event.ServerMessageCallback;
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.util.ActionResult;
 
 public class VerbaPotentia implements ModInitializer {
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
+        ServerMessageCallback.EVENT.register((player, message) -> {
 
-		System.out.println("Hello Fabric world!");
+            if (message.equals("yolo")) {
+                System.out.println(player.getName().asString() + " said a bad word.");
+                return ActionResult.FAIL;
+            }
+
+            System.out.println(player.getDisplayName().asString() + " said " + message);
+
+            return ActionResult.SUCCESS;
+        });
+
 	}
 }
